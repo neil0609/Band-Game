@@ -1,0 +1,48 @@
+var user = prompt("You are walking inside a music store when you see your favorite band playing. The Lead Man of the band asked you if you want to JAM with them. You say YES! Do you pick up the Guitar? go to the Piano? or go for the Drums?" , "Please enter Guitar or Piano or Drums here").toUpperCase();
+
+switch(user)
+{
+    case 'GUITAR':
+        var knowPlay =  prompt("Do you know how to play the Guitar?", "please answer Yes or No").toUpperCase();
+        var theirSong = prompt("Do you know their songs?", "please answer Yes or No").toUpperCase();
+        
+        if(knowPlay === 'YES' && theirSong === 'YES')
+        {
+        console.log("You Rokin' Da Electric Guitar! The other shoppers go WILD!");
+        }
+        else
+        {
+        console.log("What you doin' with dat Electric Guitar BRO???");
+        }
+        break;
+        
+    case 'PIANO':
+        var knowPlay =  prompt("Do you know how to play the Piano?" , "please answer Yes or No").toUpperCase();
+        var theirSong = prompt("Do you know their songs?" , "please answer Yes or No").toUpperCase();
+        
+        if (knowPlay === 'YES' || theirSong === 'YES')
+        {
+        console.log("You Fill the Room with the Cool Vibrations of the Piano, AWESOME!!!");
+        }
+        else
+        {
+        console.log("The shoppers Go Crazy! They want to throw you out of the store!");
+        }
+        break;
+        
+    case 'DRUMS':
+        var knowPlay =  prompt("Do you know how to play the Drums?" , "please answer Yes or No").toUpperCase();
+        var theirSong = prompt("Do you know their songs?" , "please answer Yes or No").toUpperCase();
+        if (knowPlay === 'YES' && theirSong === 'YES')
+        {
+        console.log("The pounding BEAT of your Drums can be felt in the heart!");
+        }
+        else
+        {
+        console.log("REALLY??? REALLY??... seriously REALLY?");   
+        }
+        break;
+        
+    default:
+        console.log("The Musical Instrument you have chosen doesn't fit with what the band's playing, Please hit run again and choose either Guitar, Piano or Drums");
+};
